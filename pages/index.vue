@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-purple-200 bg-opacity-50">
     <!-- Banner -->
     <div class="w-full bg-cover bg-center" style="height:48rem; background-image: url(/img/background-cut2.jpg);">
       <!-- Navigation Bar -->
@@ -7,7 +7,7 @@
       <!-- End Navigation Bar -->
 
       <!-- Social Links -->
-      <div class="flex justify-end mt-8 mr-10">
+      <div class="flex justify-end mt-8 container mx-auto">
         <div class="flex flex-col items-center">
           <img class="h-5 w-5" src="/img/svg/fb.svg" alt="Facebook">
           <img class="h-5 w-5 mt-5" src="/img/svg/tw.svg" alt="Facebook">
@@ -28,7 +28,7 @@
             </button>
           </form>
         </div>
-        <div class="flex flex-col items-center -mr-10 xl:-mr-20">
+        <div class="flex flex-col items-center">
           <div class="w-2 h-2 bg-white rounded-full"></div>
           <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
           <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
@@ -38,7 +38,7 @@
       <!-- End Banner Text -->
 
       <!-- Cards -->
-      <div class="flex justify-end items-center mt-20 mr-10 text-white">
+      <div class="flex justify-end items-center mt-20 container mx-auto text-white">
         <CardBanner color="bg-main-green" />
         <CardBanner color="bg-main-yellow" class="ml-10" />
         <CardBanner color="bg-main-purple" class="ml-10" />
@@ -48,7 +48,7 @@
     <!-- End Banner -->
 
     <!--Filter -->
-    <div class="mt-10 container mx-auto flex justify-between">
+    <div class="mt-24 container mx-auto flex justify-between">
       <div class="text-xl font-bold text-main">
         <a class="px-5 py-1 hover:bg-main hover:text-white" href="">All</a>
         <a class="px-5 py-1 bg-main text-white" href="">Popular Drinks</a>
@@ -65,6 +65,25 @@
     </div>
     <!-- End Filter -->
 
+    <!-- Product Section -->
+    <div class="mt-16 container mx-auto">
+      <h2 class="text-main text-4xl font-bold">Popular Drinks</h2>
+      <!-- Products -->
+      <div class="mt-10 grid grid-cols-4 gap-8">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
+      <!-- End Products -->
+    </div>
+    <!-- End Product Section -->
+
+    <div class="mt-20">&nbsp;</div>
   </div>
 </template>
 
