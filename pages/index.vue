@@ -1,7 +1,12 @@
 <template>
   <div>
+    <!-- Banner -->
     <div class="w-full bg-cover bg-center" style="height:48rem; background-image: url(/img/background-cut2.jpg);">
+      <!-- Navigation Bar -->
       <Navbar />
+      <!-- End Navigation Bar -->
+
+      <!-- Social Links -->
       <div class="flex justify-end mt-8 mr-10">
         <div class="flex flex-col items-center">
           <img class="h-5 w-5" src="/img/svg/fb.svg" alt="Facebook">
@@ -9,6 +14,9 @@
           <img class="h-5 w-5 mt-5" src="/img/svg/insta.svg" alt="Facebook">
         </div>
       </div>
+      <!-- End Social Links -->
+
+      <!-- Banner text -->
       <div class="flex justify-between items-center container mx-auto">
         <div class="w-2/7">
           <span class="text-7xl xl:text-9xl text-main font-bold">Enjoy!</span>
@@ -27,14 +35,42 @@
           <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
         </div>
       </div>
+      <!-- End Banner Text -->
 
+      <!-- Cards -->
+      <div class="flex justify-end items-center mt-20 mr-10 text-white">
+        <CardBanner color="bg-main-green" />
+        <CardBanner color="bg-main-yellow" class="ml-10" />
+        <CardBanner color="bg-main-purple" class="ml-10" />
+      </div>
+      <!-- End Cards -->
     </div>
+    <!-- End Banner -->
+
+    <!--Filter -->
+    <div class="mt-10 container mx-auto flex justify-between">
+      <div class="text-xl font-bold text-main">
+        <a class="px-5 py-1 hover:bg-main hover:text-white" href="">All</a>
+        <a class="px-5 py-1 bg-main text-white" href="">Popular Drinks</a>
+        <a class="px-5 py-1 hover:bg-main hover:text-white" href="">Natural Smoothie</a>
+        <a class="px-5 py-1 hover:bg-main hover:text-white" href="">Juices</a>
+        <a class="px-5 py-1 hover:bg-main hover:text-white" href="">Yogurt</a>
+      </div>
+      <div>
+        <button class="px-2 py-1 rounded-full bg-main-purple bg-opacity-50 flex items-center">
+          <img class="h-4 w-5" src="/img/svg/filter.svg" alt="filter icon">
+          <span class="ml-2 text-lg text-main">Filter</span>
+        </button>
+      </div>
+    </div>
+    <!-- End Filter -->
 
   </div>
 </template>
 
 <script>
 export default {
+  
 
 }
 </script>

@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main': '#612999'
+        'main': '#612999',
+        'main-green': '#6F9551',
+        'main-yellow': '#E4AA14',
+        'main-purple': '#6A567D'
       },
       fontSize: {
         '7xl': '5rem',
