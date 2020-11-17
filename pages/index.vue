@@ -9,9 +9,15 @@
       <!-- Social Links -->
       <div class="flex justify-end mt-8 container mx-auto">
         <div class="flex flex-col items-center">
-          <img class="h-5 w-5" src="/img/svg/fb.svg" alt="Facebook">
-          <img class="h-5 w-5 mt-5" src="/img/svg/tw.svg" alt="Facebook">
-          <img class="h-5 w-5 mt-5" src="/img/svg/insta.svg" alt="Facebook">
+          <a href="#">  
+            <img class="h-5 w-5" src="/img/svg/fb.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img class="h-5 w-5 mt-5" src="/img/svg/tw.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img class="h-5 w-5 mt-5" src="/img/svg/insta.svg" alt="Facebook">
+          </a>
         </div>
       </div>
       <!-- End Social Links -->
@@ -23,16 +29,16 @@
           <p class="mt-1 text-white text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta exercim voluptatum necessitatibus? dolorum volupta.</p>
           <form class="mt-5 flex items-center w-full">
             <input class="appearance-none focus:outline-none py-2 px-4 rounded-full w-full text-main placeholder-main placeholder-opacity-75" type="text" placeholder="Search your drink ">
-            <button class="ml-2 p-2 bg-main rounded-full">
+            <button class="ml-2 p-2 bg-main rounded-full hover:bg-opacity-50">
               <img class="h-5 w-5" src="/img/svg/search.svg" alt="search icon">
             </button>
           </form>
         </div>
         <div class="flex flex-col items-center">
-          <div class="w-2 h-2 bg-white rounded-full"></div>
-          <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
-          <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
-          <div class="w-2 h-2 bg-gray-300 rounded-full mt-3"></div>
+          <div class="cursor-pointer w-2 h-2 hover:bg-white bg-white rounded-full"></div>
+          <div class="cursor-pointer w-2 h-2 hover:bg-white bg-gray-300 rounded-full mt-3"></div>
+          <div class="cursor-pointer w-2 h-2 hover:bg-white bg-gray-300 rounded-full mt-3"></div>
+          <div class="cursor-pointer w-2 h-2 hover:bg-white bg-gray-300 rounded-full mt-3"></div>
         </div>
       </div>
       <!-- End Banner Text -->
@@ -57,19 +63,19 @@
         <a class="px-5 py-1 hover:bg-main hover:text-white" href="">Yogurt</a>
       </div>
       <div>
-        <button class="px-2 py-1 rounded-full bg-main-purple bg-opacity-50 flex items-center">
+        <button class="px-2 py-1 rounded-full bg-main-purple bg-opacity-50 hover:bg-opacity-25 flex items-center ">
           <img class="h-4 w-5" src="/img/svg/filter.svg" alt="filter icon">
-          <span class="ml-2 text-lg text-main">Filter</span>
+          <span class="ml-2 text-lg">Filter</span>
         </button>
       </div>
     </div>
     <!-- End Filter -->
 
     <!-- Product Section -->
-    <div class="mt-16 container mx-auto">
+    <div class="mt-16 px-2 md:container md:mx-auto">
       <h2 class="text-main text-4xl font-bold">Popular Drinks</h2>
       <!-- Products -->
-      <div class="mt-10 grid grid-cols-4 gap-8">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         <ProductCard />
         <ProductCard />
         <ProductCard />
@@ -84,6 +90,8 @@
     <!-- End Product Section -->
 
     <div class="mt-20">&nbsp;</div>
+
+    <SideBar />
   </div>
 </template>
 
