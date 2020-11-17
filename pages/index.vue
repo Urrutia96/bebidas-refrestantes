@@ -76,14 +76,14 @@
       <h2 class="text-main text-4xl font-bold">Popular Drinks</h2>
       <!-- Products -->
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
+        <ProductCard v-on:toggle-sidebar="toggleSidebar" />
       </div>
       <!-- End Products -->
     </div>
@@ -91,13 +91,22 @@
 
     <div class="mt-20">&nbsp;</div>
 
-    <SideBar />
+    <SideBar v-show="openSideBar" />
   </div>
 </template>
 
 <script>
 export default {
-  
+  data() {
+    return {
+      openSideBar: false
+    }
+  },
+  methods: {
+    toggleSidebar(){
+      this.openSideBar = !this.openSideBar
+    }
+  }
 
 }
 </script>
